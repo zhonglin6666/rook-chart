@@ -20,7 +20,7 @@ ceph:
   repository: ceph/ceph
   tag: v13.2.3-20190410
   dataDirHostPath: /var/lib/rook
-  monCount: "1"
+  monCount: 1
   monAllowMultiplePerNode: false
   dashboardEnabled: false
   networkHostNetwork: false
@@ -33,7 +33,7 @@ ceph:
   
 storageclass:
   isDefaultClass: true
-  relicatedSize: 2
+  relicatedSize: 3
   blockPool: replicapool
 
 storageclassAnnotations: {

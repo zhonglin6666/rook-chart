@@ -19,6 +19,16 @@ kubectl --namespace kube-system patch deploy/tiller-deploy -p '{"spec": {"templa
  # helm install --namespace rook-ceph --name rook-ceph rook-ceph/
 ```
 
+# set node selector for three osd nodes
+
+
+ kubectl label nodes node1 `ceph-osd=enabled`
+ 
+ kubectl label nodes node2 `ceph-osd=enabled` 
+  
+ kubectl label nodes node3 `ceph-osd=enabled`
+
+
 # install ceph cluster
 
 ```ecma script level 4
